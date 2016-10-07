@@ -1,0 +1,288 @@
+
+<html>
+<head>
+<title>
+Checkers
+</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css">
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+    
+function moveRedPiece1(){
+	document.getElementById("rpiece1").src="gr/you2.gif";
+	}
+    function RedPiece1(){
+	document.getElementById("rpiece1").src="gr/you1.gif";
+	}
+function moveRedPiece2(){
+	document.getElementById("rpiece2").src="gr/you2.gif";
+	}
+    function RedPiece2(){
+	document.getElementById("rpiece2").src="gr/you1.gif";
+	}
+function moveRedPiece3(){
+	document.getElementById("rpiece3").src="gr/you2.gif";
+	}
+    function RedPiece3(){
+	document.getElementById("rpiece3").src="gr/you1.gif";
+	}
+function moveRedPiece4(){
+	document.getElementById("rpiece4").src="gr/you2.gif";
+	}
+    function RedPiece4(){
+	document.getElementById("rpiece4").src="gr/you1.gif";
+	}
+function moveRedPiece5(){
+	document.getElementById("rpiece5").src="gr/you2.gif";
+	}
+    function RedPiece5(){
+	document.getElementById("rpiece5").src="gr/you1.gif";
+	}
+    function moveRedPiece6(){
+	document.getElementById("rpiece6").src="gr/you2.gif";
+	}
+    function RedPiece6(){
+	document.getElementById("rpiece6").src="gr/you1.gif";
+	}
+    function moveRedPiece7(){
+	document.getElementById("rpiece7").src="gr/you2.gif";
+	}
+    function RedPiece7(){
+	document.getElementById("rpiece7").src="gr/you1.gif";
+	}
+    function moveRedPiece8(){
+	document.getElementById("rpiece8").src="gr/you2.gif";
+	}
+    function RedPiece8(){
+	document.getElementById("rpiece8").src="gr/you1.gif";
+	}
+    function moveRedPiece9(){
+	document.getElementById("rpiece9").src="gr/you2.gif";
+	}
+    function RedPiece9(){
+	document.getElementById("rpiece9").src="gr/you1.gif";
+	}
+    function moveRedPiece10(){
+	document.getElementById("rpiece10").src="gr/you2.gif";
+	}
+    function RedPiece10(){
+	document.getElementById("rpiece10").src="gr/you1.gif";
+	}
+    function moveRedPiece11(){
+	document.getElementById("rpiece11").src="gr/you2.gif";
+	}
+    function RedPiece11(){
+	document.getElementById("rpiece11").src="gr/you1.gif";
+	}
+    function moveRedPiece12(){
+	document.getElementById("rpiece12").src="gr/you2.gif";
+	}
+    function RedPiece12(){
+	document.getElementById("rpiece12").src="gr/you1.gif";
+	}
+	function moveBlackPiece1(){
+	document.getElementById("bpiece1").src="gr/me2.gif";
+	}
+    function BlackPiece1(){
+	document.getElementById("bpiece1").src="gr/me1.gif";
+	}
+    function moveBlackPiece2(){
+	document.getElementById("bpiece2").src="gr/me2.gif";
+	}
+    function BlackPiece2(){
+	document.getElementById("bpiece2").src="gr/me1.gif";
+	}
+    function moveBlackPiece3(){
+	document.getElementById("bpiece3").src="gr/me2.gif";
+	}
+    function BlackPiece3(){
+	document.getElementById("bpiece3").src="gr/me1.gif";
+	}
+    function moveBlackPiece4(){
+	document.getElementById("bpiece4").src="gr/me2.gif";
+	}
+    function BlackPiece4(){
+	document.getElementById("bpiece4").src="gr/me1.gif";
+	}
+    function moveBlackPiece5(){
+	document.getElementById("bpiece5").src="gr/me2.gif";
+	}
+    function BlackPiece5(){
+	document.getElementById("bpiece5").src="gr/me1.gif";
+	}
+    function moveBlackPiece6(){
+	document.getElementById("bpiece6").src="gr/me2.gif";
+	}
+    function BlackPiece6(){
+	document.getElementById("bpiece6").src="gr/me1.gif";
+	}
+    function moveBlackPiece7(){
+	document.getElementById("bpiece7").src="gr/me2.gif";
+	}
+    function BlackPiece7(){
+	document.getElementById("bpiece7").src="gr/me1.gif";
+	}
+    function moveBlackPiece8(){
+	document.getElementById("bpiece8").src="gr/me2.gif";
+	}
+    function BlackPiece8(){
+	document.getElementById("bpiece8").src="gr/me1.gif";
+	}
+    function moveBlackPiece9(){
+	document.getElementById("bpiece9").src="gr/me2.gif";
+	}
+    function BlackPiece9(){
+	document.getElementById("bpiece9").src="gr/me1.gif";
+	}
+    function moveBlackPiece10(){
+	document.getElementById("bpiece10").src="gr/me2.gif";
+	}
+    function BlackPiece10(){
+	document.getElementById("bpiece10").src="gr/me1.gif";
+	}
+    function moveBlackPiece11(){
+	document.getElementById("bpiece11").src="gr/me2.gif";
+	}
+    function BlackPiece11(){
+	document.getElementById("bpiece11").src="gr/me1.gif";
+	}
+    function moveBlackPiece12(){
+	document.getElementById("bpiece12").src="gr/me2.gif";
+	}
+    function BlackPiece12(){
+	document.getElementById("bpiece12").src="gr/me1.gif";
+	}
+</script>
+<style>
+tr{
+	min-width: 50px;
+	border: 1px solid black;
+}
+td{
+	width: 66pxpx;
+	height: 66px;
+	border: 1px solid black;
+}
+tr:nth-child(odd) td:nth-child(odd){
+	background: black;
+}
+tr:nth-child(even) td:nth-child(even){
+	background: black;
+}
+
+table {
+
+    width:700px;
+	height:200px;
+}
+
+</style>
+</head>
+
+<body>
+<table align = "center">
+<tbody>
+<tr>
+	<td ondrop="drop(event)" ondragover="allowdrop(event)"><img id="rpiece1" draggable="true" ondragstart="drag(event)" onmouseover="moveRedPiece1()" onmouseout="RedPiece1()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece2" onmouseover="moveRedPiece2()" onmouseout="RedPiece2()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece3" onmouseover="moveRedPiece3()" onmouseout="RedPiece3()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece4" onmouseover="moveRedPiece4()" onmouseout="RedPiece4()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+
+</tr>
+<tr>
+	<td></td>
+	<td><img id="rpiece5" onmouseover="moveRedPiece5()" onmouseout="RedPiece5()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece6" onmouseover="moveRedPiece6()" onmouseout="RedPiece6()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece7" onmouseover="moveRedPiece7()" onmouseout="RedPiece7()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece8" onmouseover="moveRedPiece8()" onmouseout="RedPiece8()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	
+</tr>
+<tr>
+	<td><img id="rpiece9" onmouseover="moveRedPiece9()" onmouseout="RedPiece9()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece10" onmouseover="moveRedPiece10()" onmouseout="RedPiece10()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece11" onmouseover="moveRedPiece11()" onmouseout="RedPiece11()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	<td><img id="rpiece12" onmouseover="moveRedPiece12()" onmouseout="RedPiece12()" src="gr/you1.gif" alt="checkers" height="66px" width="66px" ></td>
+	<td></td>
+	
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td><img id="bpiece1" onmouseover="moveBlackPiece1()" onmouseout="BlackPiece1()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece2" onmouseover="moveBlackPiece2()" onmouseout="BlackPiece2()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece3" onmouseover="moveBlackPiece3()" onmouseout="BlackPiece3()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece4" onmouseover="moveBlackPiece4()" onmouseout="BlackPiece4()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+
+</tr>
+<tr>
+	<td><img id="bpiece5" onmouseover="moveBlackPiece5()" onmouseout="BlackPiece5()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece6" onmouseover="moveBlackPiece6()" onmouseout="BlackPiece6()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece7" onmouseover="moveBlackPiece7()" onmouseout="BlackPiece7()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece8" onmouseover="moveBlackPiece8()" onmouseout="BlackPiece8()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+
+</tr>
+<tr>
+	<td></td>
+	<td><img id="bpiece9" onmouseover="moveBlackPiece9()" onmouseout="BlackPiece9()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece10" onmouseover="moveBlackPiece10()" onmouseout="BlackPiece10()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece11" onmouseover="moveBlackPiece11()" onmouseout="BlackPiece11()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+	<td></td>
+	<td><img id="bpiece12" onmouseover="moveBlackPiece12()" onmouseout="BlackPiece12()" src="gr/me1.gif" alt="checkers" height="66px" width="66px"></td>
+
+</tr>
+</tbody>
+</table>
+</body>
+
+</html>
+
